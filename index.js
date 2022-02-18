@@ -93,7 +93,7 @@ app.delete("/employees/:id", async (req,res)=>{
             res.status(200).send(employee);
         }
     } catch (error) {
-        res.status(404).send(error);
+        res.status(500).send(error);
     }
 })
 
